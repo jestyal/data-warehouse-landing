@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('../fonts/HelveticaLTStd-Fractions.eot');
+    src: local('HelveticaLTStd-Fractions'),
+    url('../fonts/HelveticaLTStd-Fractions.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaLTStd-Fractions.woff') format('woff'),
+    url('../fonts/HelveticaLTStd-Fractions.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica LT Std';
+    src: url('../fonts/HelveticaLTStd-Bold.eot');
+    src: local('HelveticaLTStd-Bold'),
+    url('../fonts/HelveticaLTStd-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaLTStd-Bold.woff') format('woff'),
+    url('../fonts/HelveticaLTStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir LT 55 Roman';
+    src: url('../fonts/AvenirLT-Roman.eot');
+    src: local('AvenirLT-Roman'),
+    url('../fonts/AvenirLT-Roman.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirLT-Roman.woff') format('woff'),
+    url('../fonts/AvenirLT-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir LT 55 Roman';
+    src: url('../fonts/AvenirLT-Heavy.eot');
+    src: local('AvenirLT-Heavy'),
+    url('../fonts/AvenirLT-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirLT-Heavy.woff') format('woff'),
+    url('../fonts/AvenirLT-Heavy.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir LT 65';
+    src: url('../fonts/AvenirLT-Medium.eot');
+    src: local('AvenirLT-Medium'),
+    url('../fonts/AvenirLT-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirLT-Medium.woff') format('woff'),
+    url('../fonts/AvenirLT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT 45 Book';
+    src: url('AvenirLT-Book.eot');
+    src: local('AvenirLT-Book'),
+    url('AvenirLT-Book.eot?#iefix') format('embedded-opentype'),
+    url('AvenirLT-Book.woff') format('woff'),
+    url('AvenirLT-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
