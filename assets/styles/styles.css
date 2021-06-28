@@ -8,6 +8,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Helvetica LT Std';
     src: url('../fonts/HelveticaLTStd-Bold.eot');
@@ -18,6 +19,7 @@
     font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Avenir LT 55 Roman';
     src: url('../fonts/AvenirLT-Roman.eot');
@@ -28,6 +30,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Avenir LT 55 Roman';
     src: url('../fonts/AvenirLT-Heavy.eot');
@@ -38,6 +41,7 @@
     font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Avenir LT 65';
     src: url('../fonts/AvenirLT-Medium.eot');
@@ -51,16 +55,54 @@
 
 @font-face {
     font-family: 'Avenir LT 45 Book';
-    src: url('AvenirLT-Book.eot');
+    src: url('../fonts/AvenirLT-Book.eot');
     src: local('AvenirLT-Book'),
-    url('AvenirLT-Book.eot?#iefix') format('embedded-opentype'),
-    url('AvenirLT-Book.woff') format('woff'),
-    url('AvenirLT-Book.ttf') format('truetype');
+    url('../fonts/AvenirLT-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirLT-Book.woff') format('woff'),
+    url('../fonts/AvenirLT-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #4B5D68;
+    font-family: 'Avenir LT 65', serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Helvetica LT Std', serif;
+    font-weight: bold;
+    color: #212353;
+}
+.btn {
+
+}
+.grid {
+    display: grid;
+}
+
+.footer__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "ft-desc ft-btns"
+                        "ft-contacts ft-nav"
+                        "ft-copyright ft-ask";
 }
