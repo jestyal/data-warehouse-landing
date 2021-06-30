@@ -100,9 +100,29 @@ h1, h2, h3, h4 {
 
 .footer__wrap {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "ft-desc ft-btns"
                         "ft-contacts ft-nav"
-                        "ft-copyright ft-ask";
+                        "ft-copyright ft-chat";
+}
+.footer__desc {
+    grid-area: ft-desc;
+}
+.footer__btns {
+    grid-area: ft-btns;
+}
+.footer__contacts {
+    grid-area: ft-contacts;
+}
+.footer-nav__wrap {
+    display: grid;
+    grid-area: ft-nav;
+    grid-template-columns: repeat(3, 1fr);
+}
+.copyright {
+    grid-area: ft-copyright;
+}
+.footer__chat {
+    grid-area: ft-chat;
 }
