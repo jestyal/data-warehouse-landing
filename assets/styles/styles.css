@@ -92,23 +92,28 @@ h1, h2, h3, h4 {
     font-weight: bold;
     color: #212353;
 }
+
 h1 {
     margin-bottom: 50px;
     font-size: 80px;
     line-height: 1.1;
 }
+
 h2 {
     margin-bottom: 40px;
     font-size: 40px;
     line-height: 1.3;
 }
+
 a {
     text-decoration: none;
     color: #212353;
 }
+
 p {
     line-height: 1.6;
 }
+
 .btn {
     display: block;
     width: fit-content;
@@ -116,50 +121,64 @@ p {
     font-weight: bold;
     font-family: 'Avenir LT 55 Roman';
 }
+
 .btn_border {
     border-radius: 50px;
 }
+
 .bg_purple {
     background: #9C69E2;
     color: #fff;
 }
+
 .bg_grey {
     background: #4B5D68;
     color: #fff;
 }
+
 .bg_pink {
     background: #F063B8;
     color: #fff;
 }
+
 .bg_green {
     background: #68C9BA;
     color: #fff;
 }
+
 .text_center {
     text-align: center;
 }
+
 .preview {
     max-width: 584px;
     margin: 0 auto;
 }
+
 .grid {
     display: grid;
 }
+
 .header__wrap {
     display: grid;
     grid-template-columns: 50px 1fr 210px;
     padding: 50px 0;
     align-items: center;
 }
+
 .logo span {
+    margin-left: 20px;
     font-size: 20px;
     font-weight: bold;
     line-height: 1.6;
     color: #212353;
+    vertical-align: super;
 }
+
 .header-nav__wrap {
     padding: 0 100px;
 }
+
 .header-nav__item {
     display: inline-block;
     margin: 0 20px;
@@ -167,10 +186,12 @@ p {
     font-size: 16px;
     font-family: 'Avenir LT 55 Roman';
 }
+
 .header-nav__item:hover {
     color: #212353;
     font-weight: bold;
 }
+
 .header__link {
     display: block;
     width: fit-content;
@@ -183,17 +204,21 @@ p {
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     border-radius: 50px;
 }
+
 .header__link span {
     padding-right: 15px;
 }
+
 .header__link svg {
     vertical-align: text-top;
 }
+
 .main-screen {
     position: relative;
     padding-top: 80px;
     margin-bottom: 200px;
 }
+
 .main-screen::after {
     content: '';
     display: block;
@@ -205,16 +230,20 @@ p {
     z-index: -1;
     background: url("../images/main.svg") no-repeat 50% 50%;
 }
+
 .main-screen__desc {
     max-width: 60%;
 }
+
 .main-screen__desc p {
     max-width: 380px;
     margin-bottom: 50px;
 }
+
 .about {
     margin-bottom: 150px;
 }
+
 .about__wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -223,85 +252,216 @@ p {
     background: #F063B815;
     border-radius: 50px;
 }
+
 .about__desc {
     padding-right: 80px;
 }
+
 .features {
     margin-bottom: 150px;
 }
+
 .features__wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto 390px 390px;
+    gap: 50px;
 }
+
 .features__desc {
     grid-row: 1 / 2;
     grid-column: 1 / 3;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
+
 .features__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
+
 .features__item1 {
-
+    background: url("../images/fon1.svg") no-repeat 100% 100%;
 }
+
 .features__item2 {
-
+    background: url("../images/fon2.svg") no-repeat 100% 35px;
 }
+
 .features__item3 {
-
+    background: url("../images/fon3.svg") no-repeat 100% 100%;
 }
+
 .features__item4 {
-
+    background: url("../images/fon4.svg") no-repeat 100% 100%;
 }
+
+.features__info {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    height: 100%;
+    padding: 50px 50px 33px 30px;
+}
+
+.features__info h3 {
+    margin-bottom: 20px;
+    align-self: end;
+    font-size: 24px;
+    font-family: 'Helvetica LT Std';
+    line-height: 1.29;
+}
+
+.features__info p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.562;
+}
+
+.features__info a {
+    align-self: end;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.features__info a span {
+    margin-right: 20px;
+}
+
+.features__info a svg {
+    width: 20px;
+    height: 14px;
+}
+
 .testimonials {
     margin-bottom: 150px;
+    overflow: hidden;
 }
+
 .testimonials__wrap {
+    position: relative;
     padding: 110px 93px 58px;
+    z-index: 0;
     border-radius: 50px;
 }
+
 .testimonials__wrap h2 {
     color: #fff;
 }
+
 .slider__wrap {
     display: grid;
-    grid-template-columns: 100% 100% 100%;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 60px;
+    column-gap: 20px;
 }
+
 .testimonials__item {
     display: grid;
+    position: relative;
     grid-template-columns: auto 1fr;
     padding: 60px 70px 50px;
+    min-width: 400px;
+    width: 100%;
+    height: 330px;
+    z-index: 10;
     background: #fff;
     color: #4B5D68;
-    box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+    box-shadow: 0 20px 0 #8A56DB30;
+    border: 1px solid #9C69E2;
     border-radius: 20px;
 }
+.testimonials__item:first-of-type {
+    min-width: 645px;
+}
+.testimonials__item:not(:first-of-type)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(270deg, #FFFFFF 9.75%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 20px;
+    z-index: 5;
+}
+
 .testimonials__img {
     margin-right: 30px;
 }
+
 .testimonials__img img {
     width: 90px;
     height: 90px;
     border-radius: 50%;
 }
+
 .testimonials__info {
     padding-top: 20px;
 }
+
+.testimonials__title {
+    font-weight: 900;
+    line-height: 1.6;
+    color: #212353;
+}
+
+.testimonials__post {
+    margin-bottom: 19px;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #9C69E2;
+}
+
+.testimonials__desc {
+    font-family: 'Avenir LT 55 Roman';
+    line-height: 1.8;
+
+    /* для длинного текста */
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .slider__nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .slider__arrows {
     justify-self: end;
 }
+
+.slider__arrow_left {
+    margin-right: 20px;
+}
+
+.slider__dot {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    vertical-align: middle;
+}
+
+.slider__dot:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.slider__dot_active {
+    width: 10px;
+    height: 10px;
+    background: #F063B8;
+}
+
 .footer {
     padding: 100px 91px;
     border-top: 2px solid #9C69E220;
     color: #212353;
 }
+
 .footer__wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -310,63 +470,105 @@ p {
                         "ft-contacts ft-nav"
                         "ft-copyright ft-chat";
     row-gap: 150px;
+    align-items: baseline;
 }
+
 .footer__desc {
     grid-area: ft-desc;
 }
+
 .footer__desc h3 {
     margin-bottom: 20px;
     font-size: 40px;
     line-height: 1.3;
 }
+
 .footer__desc p {
     color: #4B5D68;
 }
+
 .footer__btns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(170px, 210px));
     grid-area: ft-btns;
     align-self: center;
+    align-items: baseline;
+    justify-content: end;
 }
+
 .footer__btns a:not(:last-of-type) {
     margin-right: 30px;
 }
+
 .footer__contacts {
     grid-area: ft-contacts;
 }
+
 .footer__contacts .logo {
     margin-bottom: 65px;
 }
+
+.footer__contacts p {
+    font-size: 16px;
+    font-family: 'Avenir LT 55 Roman';
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer__contacts p:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.footer__contacts a {
+    font-weight: 400;
+    font-family: 'Avenir LT 55 Roman';
+}
+
 .footer-nav__wrap {
     display: grid;
     grid-area: ft-nav;
     grid-template-columns: repeat(3, 1fr);
 }
+
 .footer-nav__title {
     margin-bottom: 30px;
+    font-size: 16px;
     font-weight: 900;
+    line-height: 1.562;
 }
+
 .footer-nav__list {
+    font-size: 16px;
     list-style-type: none;
 }
+
+.footer-nav__list li:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
 .social__wrap {
     display: grid;
     grid-template-columns: repeat(3, auto);
 }
+
 .social__link {
     display: block;
     width: 50px;
     height: 50px;
 }
+
 .social__link:not(:last-of-type) {
     margin-right: 14px;
 }
+
 .copyright {
     grid-area: ft-copyright;
     font-size: 12px;
     line-height: 1.8;
 }
+
 .footer__chat {
     grid-area: ft-chat;
     justify-self: end;
+    align-self: end;
 }
