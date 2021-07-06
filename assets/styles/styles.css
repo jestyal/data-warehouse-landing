@@ -162,7 +162,7 @@ p {
 .header__wrap {
     display: grid;
     grid-template-columns: 50px 1fr 210px;
-    padding: 50px 0;
+    padding: 50px 20px;
     align-items: center;
 }
 
@@ -246,15 +246,18 @@ p {
 
 .about__wrap {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(477px, 1fr));
     align-items: center;
-    padding: 32px 10px 25px;
+    padding: 32px 30px 25px;
     background: #F063B815;
     border-radius: 50px;
 }
-
+.about__img img {
+    display: block;
+    margin: 0 auto;
+}
 .about__desc {
-    padding-right: 80px;
+    padding-right: 40px;
 }
 
 .features {
