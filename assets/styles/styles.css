@@ -540,7 +540,7 @@ p {
 .footer-nav__wrap {
     display: grid;
     grid-area: ft-nav;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .footer-nav__title {
