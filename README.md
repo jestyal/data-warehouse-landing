@@ -1,2 +1,2 @@
 # data-warehouse-landing
-Landing page by Figma template (CSS Grid)
+Landing page by Figma template (CSS Grid + Adaptive)
